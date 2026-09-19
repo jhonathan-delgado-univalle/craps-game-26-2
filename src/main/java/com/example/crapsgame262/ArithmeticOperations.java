@@ -4,7 +4,7 @@ package com.example.crapsgame262;
  * This class represent the Arithmetic Operations
  *
  * @author Jhonathan Delgado
- * @version 1.0
+ * @version 1.1
  * @since 1.0
  */
 public class ArithmeticOperations {
@@ -44,14 +44,9 @@ public class ArithmeticOperations {
      * @param a multiplicator 1
      * @param b multiplicator 2
      * @return a * b
-     * @see #addition(int, int)
      * @since 1.0
      */
     public int multiplication(int a, int b) {
-        int acum = 0;
-        for (int i=0 ; i < b ; i++) {
-            acum = addition(acum, a);
-        }
-        return acum;
+        return a * b;
     }
 }
