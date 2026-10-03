@@ -1,5 +1,6 @@
 package com.example.crapsgame262;
 
+import com.example.crapsgame262.views.WelcomeView;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -16,8 +17,6 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        stage.setTitle("Craps");
-
         /*
         VBox root = new VBox();
         Label lblHello = new Label("Hello");
@@ -48,7 +47,7 @@ public class HelloApplication extends Application {
 
          */
 
-
+        /*
         FXMLLoader fxmlLoader = new FXMLLoader(
                 HelloApplication.class.getResource("welcome-view.fxml")
         );
@@ -57,5 +56,10 @@ public class HelloApplication extends Application {
 
         stage.setScene(scene);
         stage.show();
+        */
+
+        WelcomeView welcomeView = WelcomeView.getInstance();
+        welcomeView.show();
+
     }
 }

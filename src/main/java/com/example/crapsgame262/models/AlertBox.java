@@ -19,4 +19,13 @@ public class AlertBox implements AlertBoxInterface {
         }
         return false;
     }
+
+    @Override
+    public void showAlertBox(String title, String header, String message){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(title);
+        alert.setHeaderText(header);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
 }
